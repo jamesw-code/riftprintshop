@@ -16,6 +16,8 @@ export default function Contact() {
         }
     };
 
+    var google_url = "https://www.google.com/maps/embed/v1/place?q=Raleigh,+NC,+USA&key=" + process.env.GOOGLE_ID;
+
     function handleSubmit(e) {
         e.preventDefault();
         fetch('https://api.emailjs.com/api/v1.0/email/send', {
@@ -53,7 +55,7 @@ export default function Contact() {
                         marginHeight={0}
                         marginWidth={0}
                         style={{ filter: "opacity(0.7)" }}
-                        src="https://www.google.com/maps/embed/v1/place?q=Raleigh,+NC,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                        src={google_url}
                     />
                     <div className="bg-gray-900 relative flex flex-wrap py-6 px-10 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
