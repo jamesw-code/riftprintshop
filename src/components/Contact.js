@@ -16,7 +16,7 @@ export default function Contact() {
         }
     };
 
-    var google_url = "https://www.google.com/maps/embed/v1/place?q=Raleigh,+NC,+USA&key=" + process.env.GOOGLE_ID;
+    var google_url = "https://www.google.com/maps/embed/v1/place?q=Raleigh,+NC,+USA&key=" + process.env.REACT_APP_GOOGLE_ID;
 
     function handleSubmit(e) {
         e.preventDefault();
